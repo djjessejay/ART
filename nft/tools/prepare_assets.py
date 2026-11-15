@@ -28,7 +28,10 @@ def save_png(im: Image.Image, dst: Path) -> None:
 
 def main() -> int:
     manifest = json.loads((ROOT / "collection.json").read_text(encoding="utf-8"))
-    CLEAN.mkdir(parents=True, exist_ok=True)
+    # Verzeichnis neu aufbauen: Werke, die auf hold/exclude wechseln, duerfen nicht
+    # als Altbestand im Pinning-Verzeichnis liegen bleiben.
+    shutil.rmtree(CLEAN, ignore_errors=True)
+    CLEAN.mkdir(parents=True)
     banner = manifest["collection"]["banner_source"]
     with Image.open(ORIG / banner) as im:
         save_png(im.convert("RGB"), CLEAN / "banner.png")

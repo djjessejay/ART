@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import shutil
 import sys
 from pathlib import Path
 
@@ -51,7 +52,9 @@ def main() -> int:
 
     clean = ROOT / "assets" / "clean"
     out_dir = BUILD / "metadata"
-    out_dir.mkdir(parents=True, exist_ok=True)
+    # build/ komplett neu erzeugen, damit zurueckgezogene Tokens nicht mitgepinnt werden
+    shutil.rmtree(BUILD, ignore_errors=True)
+    out_dir.mkdir(parents=True)
 
     ids: list[int] = []
     for tok in manifest["tokens"]:
