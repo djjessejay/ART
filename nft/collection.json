@@ -1,0 +1,110 @@
+{
+  "collection": {
+    "name": "Blue Dimension Genesis",
+    "symbol": "BDG",
+    "description": "Genesis-Kollektion von DJ Jesse Jay (Zuerich Underground seit 1997, Blue Dimension auf Radio LoRa). Neon-Rails, Pixel-Skylines und Signal-Gold: sieben 1/1-Werke zwischen Vinyl-Wurzeln und audioreaktiver Zukunft. Designed by TwoDivision & @R† Artist Agency.",
+    "external_link": "https://djjessejay.ch",
+    "banner_source": "10-twodivision-banner.png",
+    "seller_fee_basis_points": 750,
+    "fee_recipient": "0x0000000000000000000000000000000000000000",
+    "creator": "DJ Jesse Jay",
+    "ai_disclosure": "Werke mit KI-gestuetzten Bildgeneratoren erstellt und kuratiert. Siehe Rechte- und KI-Hinweis in README.",
+    "license": "CC BY-NC 4.0 (Bild); Marken DJ Jesse Jay, J·Γ-Logo und @R† bleiben vorbehalten"
+  },
+  "tokens": [
+    {
+      "id": 1,
+      "status": "mint",
+      "source": "01-bern-polka-express.png",
+      "image": "1.png",
+      "name": "Bern Polka Express",
+      "description": "Eine Neon-Dampflok faehrt durch den Synthwave-Tunnel, 125 BPM, Equalizer-Waende links und rechts. All aboard the beat: neon rails into tomorrow.",
+      "attributes": {"Series": "Neon Rails", "Style": "Synthwave Line-Art", "BPM": 125, "City": "Bern", "Mood": "Drive", "Palette": "Cyan/Magenta"}
+    },
+    {
+      "id": 2,
+      "status": "mint",
+      "source": "02-zuerisee-dub.png",
+      "image": "2.png",
+      "name": "Zuerisee Dub",
+      "description": "Voxel-Skyline ueber dem Zuerichsee, Grossmuenster, Uetliberg-Turm und Spektrum-Krone. Progressive, Deep, Organic House und Techno in einer Nacht.",
+      "attributes": {"Series": "Pixel Skylines", "Style": "Voxel Synthwave", "City": "Zuerich", "Mood": "Late Night", "Palette": "Cyan/Magenta", "Genres": "Progressive / Deep / Organic House / Techno"}
+    },
+    {
+      "id": 3,
+      "status": "mint",
+      "source": "03-pixel-signature.png",
+      "image": "3.png",
+      "name": "Pixel Signature",
+      "description": "Die Signatur als Voxel-Skulptur: Eisblau trifft Signal-Gold, gespiegelt im Tanzflaechen-Raster.",
+      "attributes": {"Series": "Identity", "Style": "Voxel Typography", "Mood": "Statement", "Palette": "Signal Gold/Ice Blue"}
+    },
+    {
+      "id": 4,
+      "status": "mint",
+      "source": "04-art-agency-seal.png",
+      "image": "4.png",
+      "prepare": {"op": "crop", "box": [0, 190, 800, 1090]},
+      "name": "@R† Seal",
+      "description": "Gepraegtes Siegel der @R† Artist Agency auf Anthrazit-Karton. Ruhe vor dem Drop.",
+      "attributes": {"Series": "Identity", "Style": "Letterpress Emboss", "Mood": "Quiet", "Palette": "Champagne/Charcoal"}
+    },
+    {
+      "id": 5,
+      "status": "mint",
+      "source": "05-vinyl-roots.png",
+      "image": "5.png",
+      "name": "Vinyl Roots",
+      "description": "Zeitstrahl in Gold und Nachtblau: Vinyl-Wurzeln, Galaxy Space Night auf Radio LoRa 2001, Blue Dimension. Die Limmat haelt den Takt.",
+      "attributes": {"Series": "Chronicle", "Style": "Cinematic Photo-Composite", "City": "Zuerich", "Year": 1997, "Mood": "Heritage", "Palette": "Gold/Night Blue"}
+    },
+    {
+      "id": 6,
+      "status": "mint",
+      "source": "08-bss-genre-router.gif",
+      "image": "6.png",
+      "animation": "6.gif",
+      "prepare": {"op": "poster"},
+      "name": "BSS Genre Router",
+      "description": "Animiertes Pixel-Studio: Loudness-Analyse, Spektrum, Genre-Router mit Match-Scores. Blue Dimension Deep (Take 2) als lebendes Diagramm.",
+      "attributes": {"Series": "Machine Listening", "Style": "Animated Pixel Diorama", "Mood": "Lab", "Frames": 80, "Palette": "Navy/Amber"}
+    },
+    {
+      "id": 7,
+      "status": "mint",
+      "source": "09-logo-codex.png",
+      "image": "7.png",
+      "name": "Logo Codex",
+      "description": "Vier Inkarnationen des J·Γ-Zeichens: Neon Underground, Signal Seal, Metal Edition, Digital Pixel.",
+      "attributes": {"Series": "Identity", "Style": "Brand Codex", "Mood": "System", "Palette": "Signal Gold/Signal Cyan/Deep Blue"}
+    },
+    {
+      "id": 0,
+      "status": "hold",
+      "source": "00-neon-drive.jpg",
+      "name": "Neon Drive",
+      "reason": "Fahrzeug ist als Serienmodell eines Automobilherstellers erkennbar (Front-Emblem, Kuehlergrill-Form). Marken- und Designrecht Dritter; vor Mint Emblem/Grill entfernen und Karosserie generisch gestalten."
+    },
+    {
+      "id": 0,
+      "status": "hold",
+      "source": "06-frequency-975.jpg",
+      "name": "97.5",
+      "reason": "Wasserzeichen eines Drittanbieters im Bild; LR-Kuerzel und Frequenz verweisen auf Radio LoRa. Wasserzeichen-Nutzungsbedingungen pruefen und schriftliche Freigabe des Senders einholen."
+    },
+    {
+      "id": 0,
+      "status": "exclude",
+      "source": "07-infographic-25-years.png",
+      "name": "25+ Jahre Infographic",
+      "reason": "Dokumentation, kein Kunstwerk. Enthaelt Klarnamen und Namen dritter Kuenstler sowie Wasserzeichen des Generators. Fuer Presse-Kit verwenden, nicht minten."
+    },
+    {
+      "id": 0,
+      "status": "exclude",
+      "source": "10-twodivision-banner.png",
+      "name": "TwoDivision & @R† Banner",
+      "reason": "Wird als Collection-Banner (contractURI) verwendet, nicht als Token."
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+[
+  {
+    "file": "00-neon-drive.jpg",
+    "sha256": "ac74d835936078924c4cf2d5813333a1ef3aaa3a1ff491091e06c2277b691c0f",
+    "bytes": 1094935,
+    "format": "JPEG",
+    "width": 2848,
+    "height": 1600,
+    "aspect": "1.780",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#0E1220",
+        "share": 0.2117
+      },
+      {
+        "hex": "#1A1935",
+        "share": 0.2066
+      },
+      {
+        "hex": "#3A3370",
+        "share": 0.1931
+      },
+      {
+        "hex": "#6E58B2",
+        "share": 0.1443
+      },
+      {
+        "hex": "#311A47",
+        "share": 0.1251
+      },
+      {
+        "hex": "#8B9DE3",
+        "share": 0.1192
+      }
+    ],
+    "luminance": 0.2313,
+    "saturation": 0.5746,
+    "neon_index": 0.1083,
+    "cyan_magenta": 0.33
+  },
+  {
+    "file": "01-bern-polka-express.png",
+    "sha256": "27e0d97b58c3a6f07567b04ed1cb3bd234222ef759b836e7e50f0bc0509cb1de",
+    "bytes": 2575291,
+    "format": "PNG",
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#020532",
+        "share": 0.3063
+      },
+      {
+        "hex": "#072481",
+        "share": 0.189
+      },
+      {
+        "hex": "#6D28BA",
+        "share": 0.1589
+      },
+      {
+        "hex": "#31066E",
+        "share": 0.1417
+      },
+      {
+        "hex": "#4FA7E7",
+        "share": 0.1074
+      },
+      {
+        "hex": "#5359CA",
+        "share": 0.0966
+      }
+    ],
+    "luminance": 0.2037,
+    "saturation": 0.881,
+    "neon_index": 0.351,
+    "cyan_magenta": 0.68
+  },
+  {
+    "file": "02-zuerisee-dub.png",
+    "sha256": "818c6a7354622c8a7803f9ee1f01533024f0a08a9b3bd99f6bd0b619d8a283d0",
+    "bytes": 2596875,
+    "format": "PNG",
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#020625",
+        "share": 0.2448
+      },
+      {
+        "hex": "#000622",
+        "share": 0.1934
+      },
+      {
+        "hex": "#4550AC",
+        "share": 0.1869
+      },
+      {
+        "hex": "#2F227C",
+        "share": 0.1717
+      },
+      {
+        "hex": "#2DAFE2",
+        "share": 0.1155
+      },
+      {
+        "hex": "#38076E",
+        "share": 0.0876
+      }
+    ],
+    "luminance": 0.1878,
+    "saturation": 0.8934,
+    "neon_index": 0.2865,
+    "cyan_magenta": 1.147
+  },
+  {
+    "file": "03-pixel-signature.png",
+    "sha256": "e5fed678315a47dcae0703f989d5cc5934798fd9a5bc00912d9d8594dd50144e",
+    "bytes": 1941313,
+    "format": "PNG",
+    "width": 1933,
+    "height": 813,
+    "aspect": "2.378",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#00133D",
+        "share": 0.2373
+      },
+      {
+        "hex": "#3F7B9C",
+        "share": 0.1777
+      },
+      {
+        "hex": "#7FD3EE",
+        "share": 0.1676
+      },
+      {
+        "hex": "#00245F",
+        "share": 0.1554
+      },
+      {
+        "hex": "#0A1F46",
+        "share": 0.145
+      },
+      {
+        "hex": "#F8E64B",
+        "share": 0.1169
+      }
+    ],
+    "luminance": 0.3684,
+    "saturation": 0.8163,
+    "neon_index": 0.2769,
+    "cyan_magenta": null
+  },
+  {
+    "file": "04-art-agency-seal.png",
+    "sha256": "004c8f7e7859a8a73e23ae34c68d7252e37a7fc448c3d809e9b2b778a40e2f8b",
+    "bytes": 497612,
+    "format": "PNG",
+    "width": 800,
+    "height": 1280,
+    "aspect": "0.625",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#000000",
+        "share": 0.2939
+      },
+      {
+        "hex": "#373739",
+        "share": 0.2156
+      },
+      {
+        "hex": "#2B2C2D",
+        "share": 0.1726
+      },
+      {
+        "hex": "#232324",
+        "share": 0.1428
+      },
+      {
+        "hex": "#303032",
+        "share": 0.1285
+      },
+      {
+        "hex": "#5B5753",
+        "share": 0.0465
+      }
+    ],
+    "luminance": 0.1482,
+    "saturation": 0.0306,
+    "neon_index": 0.0,
+    "cyan_magenta": null
+  },
+  {
+    "file": "05-vinyl-roots.png",
+    "sha256": "de206ef54d9082f27f43de564ebcb703d54c02e945bb2530318817a418a6c1c6",
+    "bytes": 2419689,
+    "format": "PNG",
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#0C161B",
+        "share": 0.2925
+      },
+      {
+        "hex": "#070D10",
+        "share": 0.2199
+      },
+      {
+        "hex": "#31454A",
+        "share": 0.1475
+      },
+      {
+        "hex": "#082331",
+        "share": 0.1444
+      },
+      {
+        "hex": "#1E2527",
+        "share": 0.1007
+      },
+      {
+        "hex": "#869592",
+        "share": 0.095
+      }
+    ],
+    "luminance": 0.1718,
+    "saturation": 0.5377,
+    "neon_index": 0.0197,
+    "cyan_magenta": null
+  },
+  {
+    "file": "06-frequency-975.jpg",
+    "sha256": "8903a2c4d484e836d483cf5177ae732510d2cb606592dde4e2b1e147e7633ef8",
+    "bytes": 470621,
+    "format": "JPEG",
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#532F34",
+        "share": 0.2193
+      },
+      {
+        "hex": "#FDF1D0",
+        "share": 0.2145
+      },
+      {
+        "hex": "#F0DCAF",
+        "share": 0.1717
+      },
+      {
+        "hex": "#E3B869",
+        "share": 0.167
+      },
+      {
+        "hex": "#FBE8B8",
+        "share": 0.1308
+      },
+      {
+        "hex": "#6C9688",
+        "share": 0.0967
+      }
+    ],
+    "luminance": 0.6668,
+    "saturation": 0.41,
+    "neon_index": 0.1481,
+    "cyan_magenta": 325.143
+  },
+  {
+    "file": "07-infographic-25-years.png",
+    "sha256": "a659b64c608cf1b499e7ce4046cff4efb20c812f60a29fabd007e5de34555443",
+    "bytes": 2020800,
+    "format": "PNG",
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#070C2F",
+        "share": 0.277
+      },
+      {
+        "hex": "#FEF8E8",
+        "share": 0.1948
+      },
+      {
+        "hex": "#F3ECE6",
+        "share": 0.1629
+      },
+      {
+        "hex": "#6E7686",
+        "share": 0.1391
+      },
+      {
+        "hex": "#C7CBD4",
+        "share": 0.1274
+      },
+      {
+        "hex": "#2A294A",
+        "share": 0.0988
+      }
+    ],
+    "luminance": 0.5332,
+    "saturation": 0.3511,
+    "neon_index": 0.0244,
+    "cyan_magenta": null
+  },
+  {
+    "file": "08-bss-genre-router.gif",
+    "sha256": "24122800e9aed46c0d77de116f999eb95052a6997b0a4cf0ecd8781f780ac1f3",
+    "bytes": 16554108,
+    "format": "GIF",
+    "width": 800,
+    "height": 450,
+    "aspect": "1.778",
+    "frames": 80,
+    "palette": [
+      {
+        "hex": "#021530",
+        "share": 0.2479
+      },
+      {
+        "hex": "#131B33",
+        "share": 0.1689
+      },
+      {
+        "hex": "#716F7E",
+        "share": 0.1613
+      },
+      {
+        "hex": "#4B201F",
+        "share": 0.1576
+      },
+      {
+        "hex": "#4A4653",
+        "share": 0.1504
+      },
+      {
+        "hex": "#B3A68E",
+        "share": 0.1139
+      }
+    ],
+    "luminance": 0.2621,
+    "saturation": 0.6615,
+    "neon_index": 0.1085,
+    "cyan_magenta": 25.333
+  },
+  {
+    "file": "09-logo-codex.png",
+    "sha256": "e9caf718f9c3c60203747a943a37e2a692c0deb471ac9f80fe2ef424b126cf0c",
+    "bytes": 2799126,
+    "format": "PNG",
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#020A18",
+        "share": 0.2976
+      },
+      {
+        "hex": "#587C8D",
+        "share": 0.1734
+      },
+      {
+        "hex": "#D7D8C3",
+        "share": 0.1533
+      },
+      {
+        "hex": "#98C7DF",
+        "share": 0.1402
+      },
+      {
+        "hex": "#04224D",
+        "share": 0.1209
+      },
+      {
+        "hex": "#282D34",
+        "share": 0.1145
+      }
+    ],
+    "luminance": 0.3606,
+    "saturation": 0.5973,
+    "neon_index": 0.1462,
+    "cyan_magenta": null
+  },
+  {
+    "file": "10-twodivision-banner.png",
+    "sha256": "8206f0aa23cf26bf09873c5f084249c854a3d2972b4b3f9b6d871768ca042204",
+    "bytes": 662838,
+    "format": "PNG",
+    "width": 1280,
+    "height": 426,
+    "aspect": "3.005",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#000A1C",
+        "share": 0.246
+      },
+      {
+        "hex": "#000818",
+        "share": 0.1826
+      },
+      {
+        "hex": "#000613",
+        "share": 0.1799
+      },
+      {
+        "hex": "#000510",
+        "share": 0.1642
+      },
+      {
+        "hex": "#000715",
+        "share": 0.1511
+      },
+      {
+        "hex": "#323F4A",
+        "share": 0.0761
+      }
+    ],
+    "luminance": 0.062,
+    "saturation": 0.945,
+    "neon_index": 0.0089,
+    "cyan_magenta": null
+  }
+]
