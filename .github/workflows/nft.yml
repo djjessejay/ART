@@ -1,0 +1,62 @@
+name: nft
+
+on:
+  push:
+    paths: ["nft/**", ".github/workflows/nft.yml"]
+  pull_request:
+    paths: ["nft/**", ".github/workflows/nft.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: nft
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "pillow==12.3.0"  # Version gepinnt: Median-Cut-Palette muss bitgleich bleiben
+      - name: Analyse reproduzierbar
+        run: |
+          python tools/analyze.py
+          git diff --exit-code analysis.json
+      - name: Assets und Metadaten bauen
+        run: make metadata
+      - name: Metadaten-Schema pruefen
+        run: |
+          python - <<'EOF'
+          import json, pathlib
+          req = {"name", "description", "image", "attributes", "external_url"}
+          files = sorted(pathlib.Path("build/metadata").glob("*.json"))
+          assert files, "keine Metadaten gebaut"
+          for f in files:
+              m = json.loads(f.read_text())
+              missing = req - m.keys()
+              assert not missing, f"{f}: fehlt {missing}"
+              assert m["image"].startswith("ipfs://"), f"{f}: image nicht ipfs://"
+          print(f"{len(files)} Metadaten-Dateien valide")
+          EOF
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nft-metadata
+          path: nft/build/
+
+  contracts:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: nft/contracts
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+      - name: Abhaengigkeiten (gepinnte Versionen)
+        run: |
+          git clone --depth 1 --branch v5.1.0 https://github.com/OpenZeppelin/openzeppelin-contracts.git lib/openzeppelin-contracts
+          git clone --depth 1 --branch v1.9.4 https://github.com/foundry-rs/forge-std.git lib/forge-std
+      - run: forge build --sizes
+      - run: forge test -vv
