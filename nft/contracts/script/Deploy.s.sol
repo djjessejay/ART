@@ -7,13 +7,15 @@ import {BlueDimensionGenesis} from "../src/BlueDimensionGenesis.sol";
 /// Deployment ueber Hardware-Wallet oder Keystore, nie mit Klartext-Private-Key:
 ///   forge script script/Deploy.s.sol --rpc-url $RPC_URL --ledger --sender $OWNER --broadcast --verify
 /// Pflicht-Variablen: OWNER, METADATA_CID, ROYALTY_RECEIVER
-/// Optional: MAX_SUPPLY (7), ROYALTY_BPS (750), MINT_TO (leer = kein Mint)
+/// Optional: MAX_SUPPLY (9 = 7 Genesis + 2 reservierte Wave-II-IDs), ROYALTY_BPS (750),
+///           MINT_TO + MINT_COUNT (mintet IDs 1..MINT_COUNT, Standard 7 = nur freigegebene Werke)
 contract Deploy is Script {
     function run() external returns (BlueDimensionGenesis nft) {
         address owner = vm.envAddress("OWNER");
         string memory cid = vm.envString("METADATA_CID");
         address royaltyReceiver = vm.envAddress("ROYALTY_RECEIVER");
-        uint256 maxSupply = vm.envOr("MAX_SUPPLY", uint256(7));
+        uint256 maxSupply = vm.envOr("MAX_SUPPLY", uint256(9));
+        uint256 mintCount = vm.envOr("MINT_COUNT", uint256(7));
         uint96 bps = uint96(vm.envOr("ROYALTY_BPS", uint256(750)));
         address mintTo = vm.envOr("MINT_TO", address(0));
 
@@ -23,8 +25,9 @@ contract Deploy is Script {
         vm.startBroadcast(owner);
         nft = new BlueDimensionGenesis(owner, maxSupply, base, curi, royaltyReceiver, bps);
         if (mintTo != address(0)) {
-            uint256[] memory ids = new uint256[](maxSupply);
-            for (uint256 i; i < maxSupply; ++i) ids[i] = i + 1;
+            require(mintCount <= maxSupply, "MINT_COUNT > MAX_SUPPLY");
+            uint256[] memory ids = new uint256[](mintCount);
+            for (uint256 i; i < mintCount; ++i) ids[i] = i + 1;
             nft.mintBatch(mintTo, ids);
         }
         vm.stopBroadcast();

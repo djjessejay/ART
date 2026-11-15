@@ -8,13 +8,13 @@ Messwerte aus `tools/analyze.py` (Rohdaten in `analysis.json`). Neon Index = Ant
 
 | Datei | Aufloesung | Frames | Luminanz | Saettigung | Neon | Dominanz | Entscheid |
 |---|---|---|---|---|---|---|---|
-| 00 Neon Drive | 2848x1600 | 1 | 0.23 | 0.57 | 0.11 | #0E1220 | hold |
+| 00 Neon Drive | 2848x1600 | 1 | 0.23 | 0.57 | 0.11 | #0E1220 | Wave II, ID 8 reserviert |
 | 01 Bern Polka Express | 1672x941 | 1 | 0.20 | 0.88 | 0.35 | #020532 | Token 1 |
 | 02 Zuerisee Dub | 1672x941 | 1 | 0.19 | 0.89 | 0.29 | #020625 | Token 2 |
 | 03 Pixel Signature | 1933x813 | 1 | 0.37 | 0.82 | 0.28 | #00133D | Token 3 |
 | 04 @R† Seal | 800x1280 (Screenshot) | 1 | 0.15 | 0.03 | 0.00 | #000000 | Token 4 (Crop 800x900) |
 | 05 Vinyl Roots | 1672x941 | 1 | 0.17 | 0.54 | 0.02 | #0C161B | Token 5 |
-| 06 97.5 | 1672x941 | 1 | 0.67 | 0.41 | 0.15 | #532F34 | hold |
+| 06 97.5 | 1672x941 | 1 | 0.67 | 0.41 | 0.15 | #532F34 | Wave II, ID 9 reserviert |
 | 07 Infographic 25+ | 1672x941 | 1 | 0.53 | 0.35 | 0.02 | #070C2F | exclude |
 | 08 BSS Genre Router | 800x450 GIF | 80 | 0.26 | 0.66 | 0.11 | #021530 | Token 6 (animiert) |
 | 09 Logo Codex | 1672x941 | 1 | 0.36 | 0.60 | 0.15 | #020A18 | Token 7 |
@@ -31,14 +31,35 @@ Visuelle Lesart:
 
 | Werk | Befund | Massnahme |
 |---|---|---|
-| Neon Drive | Serienfahrzeug mit erkennbarem Hersteller-Emblem und Kuehlergrill | Nicht minten. Emblem und Grill entfernen, Karosserie generisch neu generieren |
-| 97.5 | Wasserzeichen eines KI-Tools, LR-Kuerzel und Frequenz von Radio LoRa | Nutzungsbedingungen pruefen, schriftliche Freigabe des Senders einholen |
+| Neon Drive | Serienfahrzeug mit erkennbarem Hersteller-Emblem und Kuehlergrill | Emblem per Inpainting entfernt. Grill- und Karosserieform bleiben erkennbar: Front generisch neu generieren oder anwaltlich freigeben |
+| 97.5 | Wasserzeichen eines KI-Tools, LR-Kuerzel und Frequenz von Radio LoRa | Wasserzeichen per Rasterversatz entfernt. Offen: Nutzungsbedingungen des Generators, schriftliche Freigabe von Radio LoRa |
 | Infographic | Klarname, Namen dritter Kuenstler, Generator-Wasserzeichen | Nur Presse-Kit |
 | @R† Seal | Original war Smartphone-Screenshot mit UI-Elementen, nur 800 px breit | Crop umgesetzt. Hochaufloesende Vektorfassung nachliefern. ®-Zeichen nur verwenden, wenn die Marke eingetragen ist (Swissreg/EUIPO), sonst irrefuehrend |
 | BSS Genre Router | Enthaelt staatliches Hoheitszeichen (DDR-Emblem-Anmutung) und Retro-Game-Figuren | Vor Mainnet-Mint pruefen, ob einzelne Figuren bekannten Spielcharakteren entsprechen |
 | Alle | KI-gestuetzt erzeugt. In CH/EU ist Urheberrechtsschutz rein maschinell erzeugter Inhalte unsicher | KI-Hinweis steht in jedem Token (`properties.ai_disclosure`, Trait "Creation"). Lizenz CC BY-NC 4.0 auf das Bild, Markenrechte vorbehalten |
 
-## 3. Architektur
+## 3. Wave II
+
+Neon Drive (ID 8) und 97.5 (ID 9) sind im Contract reserviert (`MAX_SUPPLY = 9`), werden beim Deploy aber nicht gemintet (`MINT_COUNT = 7`).
+
+Retusche (`tools/retouch.py`, deterministisch, Originale bleiben unveraendert):
+
+| Werk | Operation | Ergebnis |
+|---|---|---|
+| Neon Drive | OpenCV-Telea-Inpainting einer Ellipse ueber dem Motorhauben-Emblem | Emblem entfernt, Lackflaeche geschlossen |
+| 97.5 | Noppenraster um eine Periode (47 px, automatisch ermittelt) nach unten kopiert, Helligkeitsverlauf an den Raendern angeglichen | Wasserzeichen entfernt, keine sichtbare Naht |
+
+Freigabe-Gate: Jedes Werk fuehrt in `collection.json` eine `clearance`-Liste. `build_metadata.py` verweigert den Build, sobald ein Werk auf `mint` steht und ein Punkt nicht `done` ist.
+
+Offene Punkte:
+
+1. Neon Drive: Front generisch neu generieren oder Designrecht anwaltlich klaeren.
+2. 97.5: Nutzungsbedingungen des Bildgenerators pruefen (kommerzielle Nutzung, Entfernen des Wasserzeichens).
+3. 97.5: Schriftliche Freigabe von Radio LoRa fuer LR-Kuerzel und Frequenz.
+
+Release-Ablauf: Punkte auf `done`, Status auf `mint`, `make metadata-strict`, `make pin`, dann `setBaseURI(ipfs://<neue METADATA_CID>/metadata/)` und `mint(<to>, 8|9)`. `freezeMetadata()` erst nach Wave II ausfuehren, sonst sind die IDs 8 und 9 ohne Metadaten eingefroren.
+
+## 4. Architektur
 
 ```mermaid
 flowchart LR
@@ -64,11 +85,12 @@ Contract `contracts/src/BlueDimensionGenesis.sol`:
 - `setBaseURI` / `setContractURI` bis `freezeMetadata()`, danach unveraenderlich, `PermanentURI`-Events fuer Marktplaetze.
 - `contractURI()` fuer Collection-Name, Banner und Royalty-Anzeige.
 
-## 4. Pipeline
+## 5. Pipeline
 
 ```bash
 cd nft
 make analyze            # Bildanalyse
+make retouch            # Wave-II-Retusche (opencv-python-headless)
 make metadata           # Assets + Metadaten mit Platzhalter-CID (Review)
 make test               # forge test (Unit + Fuzz)
 make pin                # Kubo lokal: IMAGES_CID, dann METADATA_CID
@@ -84,7 +106,7 @@ Sicherheitsregeln:
 - Kein Private Key in `.env` oder CI. Signatur nur per Ledger (`--ledger`) oder verschluesseltem Keystore (`cast wallet import`).
 - `fee_recipient` in `collection.json` vor dem Strict-Build setzen (aktuell Null-Adresse, Strict-Build schlaegt bewusst fehl).
 
-## 5. Verifikation
+## 6. Verifikation
 
 | Pruefung | Ergebnis |
 |---|---|

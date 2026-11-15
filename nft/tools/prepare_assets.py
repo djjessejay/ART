@@ -20,6 +20,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 ORIG = ROOT / "assets" / "original"
 CLEAN = ROOT / "assets" / "clean"
+RETOUCHED = ROOT / "assets" / "retouched"
 
 
 def save_png(im: Image.Image, dst: Path) -> None:
@@ -39,7 +40,8 @@ def main() -> int:
     for tok in manifest["tokens"]:
         if tok["status"] != "mint":
             continue
-        src = ORIG / tok["source"]
+        # retuschierte Werke (Feld "original" gesetzt) liegen in assets/retouched
+        src = (RETOUCHED if "original" in tok else ORIG) / tok["source"]
         prep = tok.get("prepare", {"op": "copy"})
         op = prep["op"]
         if op == "copy":

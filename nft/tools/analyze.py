@@ -21,6 +21,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIG = ROOT / "assets" / "original"
+RETOUCHED = ROOT / "assets" / "retouched"
 SAMPLE = 256  # Analyse auf 256px Kantenlaenge, ausreichend fuer Farbstatistik
 
 
@@ -80,7 +81,8 @@ def analyze(path: Path) -> dict:
 
 
 def main() -> int:
-    out = [analyze(p) for p in sorted(ORIG.iterdir()) if p.is_file()]
+    dirs = [d for d in (ORIG, RETOUCHED) if d.is_dir()]
+    out = [analyze(p) for d in dirs for p in sorted(d.iterdir()) if p.is_file()]
     (ROOT / "analysis.json").write_text(json.dumps(out, indent=2) + "\n", encoding="utf-8")
     for a in out:
         print(

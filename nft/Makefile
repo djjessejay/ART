@@ -1,8 +1,11 @@
-.PHONY: all analyze assets metadata metadata-strict test pin deploy-testnet clean
+.PHONY: all retouch analyze assets metadata metadata-strict test pin deploy-testnet clean
 
 PY ?= python3
 
 all: analyze assets metadata
+
+retouch:            ## Wave-II-Retusche -> assets/retouched
+	$(PY) tools/retouch.py
 
 analyze:            ## Bildanalyse -> analysis.json
 	$(PY) tools/analyze.py
