@@ -110,8 +110,6 @@ def main() -> int:
         (out_dir / f"{tid}.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"[ok] metadata/{tid}.json  {meta['name']}")
 
-    if sorted(ids) != list(range(1, len(ids) + 1)):
-        errors.append(f"Token-IDs muessen lueckenlos ab 1 laufen, gefunden {sorted(ids)}")
 
     contract_meta = {
         "name": col["name"],
@@ -126,7 +124,11 @@ def main() -> int:
     reserved = sorted(t["id"] for t in manifest["tokens"] if t["status"] == "hold" and t.get("id"))
     if set(reserved) & set(ids):
         errors.append(f"Token-IDs doppelt zwischen mint und hold: {set(reserved) & set(ids)}")
-    max_supply = len(ids) + len(reserved)
+    # Lueckenlosigkeit ueber gemintete UND reservierte IDs: ID 9 darf vor ID 8 freigegeben werden
+    all_ids = sorted(ids + reserved)
+    if all_ids != list(range(1, len(all_ids) + 1)):
+        errors.append(f"Token-IDs (mint + reserviert) muessen lueckenlos ab 1 laufen, gefunden {all_ids}")
+    max_supply = len(all_ids)
     print(f"[ok] collection.json  mint={ids} reserviert(hold)={reserved} MAX_SUPPLY={max_supply}")
 
     if errors:
