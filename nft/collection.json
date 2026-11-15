@@ -19,7 +19,14 @@
       "image": "1.png",
       "name": "Bern Polka Express",
       "description": "Eine Neon-Dampflok faehrt durch den Synthwave-Tunnel, 125 BPM, Equalizer-Waende links und rechts. All aboard the beat: neon rails into tomorrow.",
-      "attributes": {"Series": "Neon Rails", "Style": "Synthwave Line-Art", "BPM": 125, "City": "Bern", "Mood": "Drive", "Palette": "Cyan/Magenta"}
+      "attributes": {
+        "Series": "Neon Rails",
+        "Style": "Synthwave Line-Art",
+        "BPM": 125,
+        "City": "Bern",
+        "Mood": "Drive",
+        "Palette": "Cyan/Magenta"
+      }
     },
     {
       "id": 2,
@@ -28,7 +35,14 @@
       "image": "2.png",
       "name": "Zuerisee Dub",
       "description": "Voxel-Skyline ueber dem Zuerichsee, Grossmuenster, Uetliberg-Turm und Spektrum-Krone. Progressive, Deep, Organic House und Techno in einer Nacht.",
-      "attributes": {"Series": "Pixel Skylines", "Style": "Voxel Synthwave", "City": "Zuerich", "Mood": "Late Night", "Palette": "Cyan/Magenta", "Genres": "Progressive / Deep / Organic House / Techno"}
+      "attributes": {
+        "Series": "Pixel Skylines",
+        "Style": "Voxel Synthwave",
+        "City": "Zuerich",
+        "Mood": "Late Night",
+        "Palette": "Cyan/Magenta",
+        "Genres": "Progressive / Deep / Organic House / Techno"
+      }
     },
     {
       "id": 3,
@@ -37,17 +51,35 @@
       "image": "3.png",
       "name": "Pixel Signature",
       "description": "Die Signatur als Voxel-Skulptur: Eisblau trifft Signal-Gold, gespiegelt im Tanzflaechen-Raster.",
-      "attributes": {"Series": "Identity", "Style": "Voxel Typography", "Mood": "Statement", "Palette": "Signal Gold/Ice Blue"}
+      "attributes": {
+        "Series": "Identity",
+        "Style": "Voxel Typography",
+        "Mood": "Statement",
+        "Palette": "Signal Gold/Ice Blue"
+      }
     },
     {
       "id": 4,
       "status": "mint",
       "source": "04-art-agency-seal.png",
       "image": "4.png",
-      "prepare": {"op": "crop", "box": [0, 190, 800, 1090]},
+      "prepare": {
+        "op": "crop",
+        "box": [
+          0,
+          190,
+          800,
+          1090
+        ]
+      },
       "name": "@R† Seal",
       "description": "Gepraegtes Siegel der @R† Artist Agency auf Anthrazit-Karton. Ruhe vor dem Drop.",
-      "attributes": {"Series": "Identity", "Style": "Letterpress Emboss", "Mood": "Quiet", "Palette": "Champagne/Charcoal"}
+      "attributes": {
+        "Series": "Identity",
+        "Style": "Letterpress Emboss",
+        "Mood": "Quiet",
+        "Palette": "Champagne/Charcoal"
+      }
     },
     {
       "id": 5,
@@ -56,7 +88,14 @@
       "image": "5.png",
       "name": "Vinyl Roots",
       "description": "Zeitstrahl in Gold und Nachtblau: Vinyl-Wurzeln, Galaxy Space Night auf Radio LoRa 2001, Blue Dimension. Die Limmat haelt den Takt.",
-      "attributes": {"Series": "Chronicle", "Style": "Cinematic Photo-Composite", "City": "Zuerich", "Year": 1997, "Mood": "Heritage", "Palette": "Gold/Night Blue"}
+      "attributes": {
+        "Series": "Chronicle",
+        "Style": "Cinematic Photo-Composite",
+        "City": "Zuerich",
+        "Year": 1997,
+        "Mood": "Heritage",
+        "Palette": "Gold/Night Blue"
+      }
     },
     {
       "id": 6,
@@ -64,10 +103,18 @@
       "source": "08-bss-genre-router.gif",
       "image": "6.png",
       "animation": "6.gif",
-      "prepare": {"op": "poster"},
+      "prepare": {
+        "op": "poster"
+      },
       "name": "BSS Genre Router",
       "description": "Animiertes Pixel-Studio: Loudness-Analyse, Spektrum, Genre-Router mit Match-Scores. Blue Dimension Deep (Take 2) als lebendes Diagramm.",
-      "attributes": {"Series": "Machine Listening", "Style": "Animated Pixel Diorama", "Mood": "Lab", "Frames": 80, "Palette": "Navy/Amber"}
+      "attributes": {
+        "Series": "Machine Listening",
+        "Style": "Animated Pixel Diorama",
+        "Mood": "Lab",
+        "Frames": 80,
+        "Palette": "Navy/Amber"
+      }
     },
     {
       "id": 7,
@@ -76,21 +123,99 @@
       "image": "7.png",
       "name": "Logo Codex",
       "description": "Vier Inkarnationen des J·Γ-Zeichens: Neon Underground, Signal Seal, Metal Edition, Digital Pixel.",
-      "attributes": {"Series": "Identity", "Style": "Brand Codex", "Mood": "System", "Palette": "Signal Gold/Signal Cyan/Deep Blue"}
+      "attributes": {
+        "Series": "Identity",
+        "Style": "Brand Codex",
+        "Mood": "System",
+        "Palette": "Signal Gold/Signal Cyan/Deep Blue"
+      }
     },
     {
-      "id": 0,
+      "id": 8,
       "status": "hold",
-      "source": "00-neon-drive.jpg",
+      "wave": 2,
+      "original": "00-neon-drive.jpg",
+      "source": "00-neon-drive.png",
+      "image": "8.png",
+      "retouch": [
+        {
+          "op": "inpaint",
+          "center": [
+            730,
+            754
+          ],
+          "axes": [
+            46,
+            16
+          ],
+          "radius": 9
+        }
+      ],
       "name": "Neon Drive",
-      "reason": "Fahrzeug ist als Serienmodell eines Automobilherstellers erkennbar (Front-Emblem, Kuehlergrill-Form). Marken- und Designrecht Dritter; vor Mint Emblem/Grill entfernen und Karosserie generisch gestalten."
+      "description": "Ein Coupé gleitet durch Spektralwellen, Lautsprecher links und rechts, Funkenregen in Cyan und Magenta. Der Bass wird sichtbar.",
+      "attributes": {
+        "Series": "Neon Rails",
+        "Style": "Cinematic Neon",
+        "Mood": "Drive",
+        "Palette": "Cyan/Magenta/Violet"
+      },
+      "clearance": [
+        {
+          "item": "Hersteller-Emblem auf der Motorhaube entfernt",
+          "state": "done"
+        },
+        {
+          "item": "Kuehlergrill- und Karosserieform entspricht weiterhin einem Serienmodell (Design-/Ausstattungsschutz). Front generisch neu generieren oder anwaltlich freigeben",
+          "state": "open"
+        }
+      ]
     },
     {
-      "id": 0,
+      "id": 9,
       "status": "hold",
-      "source": "06-frequency-975.jpg",
+      "wave": 2,
+      "original": "06-frequency-975.jpg",
+      "source": "06-frequency-975.png",
+      "image": "9.png",
+      "retouch": [
+        {
+          "op": "pattern_patch",
+          "axis": "y",
+          "box": [
+            1500,
+            882,
+            1666,
+            924
+          ],
+          "shift_range": [
+            40,
+            56
+          ]
+        }
+      ],
       "name": "97.5",
-      "reason": "Wasserzeichen eines Drittanbieters im Bild; LR-Kuerzel und Frequenz verweisen auf Radio LoRa. Wasserzeichen-Nutzungsbedingungen pruefen und schriftliche Freigabe des Senders einholen."
+      "description": "Die Frequenz als Steckbaustein-Mosaik: Bruecke, Doppeltuerme, Sendemast, Kassette, Vinyl und Mikrofon im Wellenkranz. Zuerich auf Sendung.",
+      "attributes": {
+        "Series": "Pixel Skylines",
+        "Style": "Brick Mosaic",
+        "City": "Zuerich",
+        "Mood": "On Air",
+        "Palette": "Cream/Teal/Crimson/Gold"
+      },
+      "clearance": [
+        {
+          "item": "Wasserzeichen des Generators entfernt",
+          "state": "done"
+        },
+        {
+          "item": "Nutzungsbedingungen des Bildgenerators fuer kommerzielle Nutzung und Wasserzeichen-Entfernung pruefen",
+          "state": "open"
+        },
+        {
+          "item": "Schriftliche Freigabe von Radio LoRa fuer LR-Kuerzel und Frequenz 97.5",
+          "state": "open"
+        }
+      ]
     },
     {
       "id": 0,

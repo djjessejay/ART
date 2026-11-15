@@ -61,6 +61,9 @@ def main() -> int:
         if tok["status"] != "mint":
             continue
         tid = tok["id"]
+        open_items = [c["item"] for c in tok.get("clearance", []) if c["state"] != "done"]
+        if open_items:
+            errors.append(f"Token {tid} ({tok['name']}) hat offene Rechte-Freigaben: {open_items}")
         if tid in ids:
             errors.append(f"doppelte Token-ID {tid}")
         ids.append(tid)
@@ -120,7 +123,11 @@ def main() -> int:
         "fee_recipient": col["fee_recipient"],
     }
     (BUILD / "collection.json").write_text(json.dumps(contract_meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"[ok] collection.json  maxSupply={len(ids)}")
+    reserved = sorted(t["id"] for t in manifest["tokens"] if t["status"] == "hold" and t.get("id"))
+    if set(reserved) & set(ids):
+        errors.append(f"Token-IDs doppelt zwischen mint und hold: {set(reserved) & set(ids)}")
+    max_supply = len(ids) + len(reserved)
+    print(f"[ok] collection.json  mint={ids} reserviert(hold)={reserved} MAX_SUPPLY={max_supply}")
 
     if errors:
         for e in errors:

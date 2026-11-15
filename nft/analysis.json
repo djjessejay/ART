@@ -438,5 +438,85 @@
     "saturation": 0.945,
     "neon_index": 0.0089,
     "cyan_magenta": null
+  },
+  {
+    "file": "00-neon-drive.png",
+    "sha256": "f4e5fef5edaa6942dabfe90cff2a370414d21fea247e8a2019940e7913ea1e8d",
+    "bytes": 5087871,
+    "format": "PNG",
+    "width": 2848,
+    "height": 1600,
+    "aspect": "1.780",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#0E1220",
+        "share": 0.2117
+      },
+      {
+        "hex": "#1A1935",
+        "share": 0.2066
+      },
+      {
+        "hex": "#3A3370",
+        "share": 0.1931
+      },
+      {
+        "hex": "#6E58B2",
+        "share": 0.1442
+      },
+      {
+        "hex": "#311A47",
+        "share": 0.1252
+      },
+      {
+        "hex": "#8B9DE3",
+        "share": 0.1192
+      }
+    ],
+    "luminance": 0.2313,
+    "saturation": 0.5747,
+    "neon_index": 0.1083,
+    "cyan_magenta": 0.33
+  },
+  {
+    "file": "06-frequency-975.png",
+    "sha256": "d95e18f22af9957a8abd59b9e8c9ca93f6df9a9c5586c5e8c46101144ee26835",
+    "bytes": 2429319,
+    "format": "PNG",
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#532F34",
+        "share": 0.2526
+      },
+      {
+        "hex": "#FDF2D1",
+        "share": 0.1942
+      },
+      {
+        "hex": "#A8A778",
+        "share": 0.1858
+      },
+      {
+        "hex": "#EAD6A7",
+        "share": 0.1783
+      },
+      {
+        "hex": "#FBE9BA",
+        "share": 0.0954
+      },
+      {
+        "hex": "#F7E4B9",
+        "share": 0.0936
+      }
+    ],
+    "luminance": 0.667,
+    "saturation": 0.41,
+    "neon_index": 0.1481,
+    "cyan_magenta": 325.143
   }
 ]
