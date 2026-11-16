@@ -1,0 +1,526 @@
+{
+  "rows": [
+    {
+      "name": "Bern Polka Express [P2V]",
+      "source": "01-bern-polka-express.png",
+      "neon_index": 0.351,
+      "w32": {
+        "glb_bytes": 149108,
+        "faces": 1193,
+        "faces_naive": 6924,
+        "height_std": 1.177,
+        "delta_e": 10.388
+      },
+      "w64": {
+        "glb_bytes": 558936,
+        "faces": 4498,
+        "faces_naive": 28554,
+        "height_std": 1.353,
+        "delta_e": 10.606
+      },
+      "w96": {
+        "glb_bytes": 1236724,
+        "faces": 9964,
+        "faces_naive": 65586,
+        "height_std": 1.498,
+        "delta_e": 10.75
+      },
+      "w128": {
+        "glb_bytes": 2362288,
+        "faces": 17361,
+        "faces_naive": 117966,
+        "height_std": 1.585,
+        "delta_e": 11.0
+      },
+      "k8_delta_e": 12.845,
+      "k16_delta_e": 10.606,
+      "k32_delta_e": 8.297,
+      "ssim_w64": 0.417,
+      "ssim_w32": 0.2178,
+      "deterministic": true
+    },
+    {
+      "name": "Zuerisee Dub [P2V]",
+      "source": "02-zuerisee-dub.png",
+      "neon_index": 0.2865,
+      "w32": {
+        "glb_bytes": 147608,
+        "faces": 1181,
+        "faces_naive": 6606,
+        "height_std": 1.071,
+        "delta_e": 9.947
+      },
+      "w64": {
+        "glb_bytes": 553096,
+        "faces": 4451,
+        "faces_naive": 27156,
+        "height_std": 1.288,
+        "delta_e": 11.018
+      },
+      "w96": {
+        "glb_bytes": 1196040,
+        "faces": 9636,
+        "faces_naive": 62316,
+        "height_std": 1.447,
+        "delta_e": 10.995
+      },
+      "w128": {
+        "glb_bytes": 2273740,
+        "faces": 16710,
+        "faces_naive": 111420,
+        "height_std": 1.541,
+        "delta_e": 11.295
+      },
+      "k8_delta_e": 13.91,
+      "k16_delta_e": 11.018,
+      "k32_delta_e": 8.765,
+      "ssim_w64": 0.4389,
+      "ssim_w32": 0.2476,
+      "deterministic": true
+    },
+    {
+      "name": "Pixel Signature [P2V]",
+      "source": "03-pixel-signature.png",
+      "neon_index": 0.2769,
+      "w32": {
+        "glb_bytes": 128888,
+        "faces": 1030,
+        "faces_naive": 8982,
+        "height_std": 2.26,
+        "delta_e": 8.287
+      },
+      "w64": {
+        "glb_bytes": 469776,
+        "faces": 3779,
+        "faces_naive": 38706,
+        "height_std": 2.913,
+        "delta_e": 10.428
+      },
+      "w96": {
+        "glb_bytes": 965528,
+        "faces": 7777,
+        "faces_naive": 87558,
+        "height_std": 3.175,
+        "delta_e": 10.355
+      },
+      "w128": {
+        "glb_bytes": 1662040,
+        "faces": 13394,
+        "faces_naive": 158520,
+        "height_std": 3.217,
+        "delta_e": 9.199
+      },
+      "k8_delta_e": 14.22,
+      "k16_delta_e": 10.428,
+      "k32_delta_e": 7.449,
+      "ssim_w64": 0.6246,
+      "ssim_w32": 0.3088,
+      "deterministic": true
+    },
+    {
+      "name": "@R† Seal [P2V]",
+      "source": "04-art-agency-seal.png",
+      "neon_index": 0.0,
+      "w32": {
+        "glb_bytes": 198704,
+        "faces": 1593,
+        "faces_naive": 14196,
+        "height_std": 0.614,
+        "delta_e": 1.343
+      },
+      "w64": {
+        "glb_bytes": 730548,
+        "faces": 5882,
+        "faces_naive": 57498,
+        "height_std": 0.836,
+        "delta_e": 1.584
+      },
+      "w96": {
+        "glb_bytes": 1603140,
+        "faces": 12919,
+        "faces_naive": 130218,
+        "height_std": 0.927,
+        "delta_e": 1.631
+      },
+      "w128": {
+        "glb_bytes": 3085940,
+        "faces": 22682,
+        "faces_naive": 232014,
+        "height_std": 0.969,
+        "delta_e": 1.713
+      },
+      "k8_delta_e": 2.184,
+      "k16_delta_e": 1.584,
+      "k32_delta_e": 1.237,
+      "ssim_w64": 0.864,
+      "ssim_w32": 0.7927,
+      "deterministic": true
+    },
+    {
+      "name": "Vinyl Roots [P2V]",
+      "source": "05-vinyl-roots.png",
+      "neon_index": 0.0197,
+      "w32": {
+        "glb_bytes": 143264,
+        "faces": 1146,
+        "faces_naive": 5922,
+        "height_std": 1.047,
+        "delta_e": 4.34
+      },
+      "w64": {
+        "glb_bytes": 527304,
+        "faces": 4243,
+        "faces_naive": 24306,
+        "height_std": 1.334,
+        "delta_e": 4.821
+      },
+      "w96": {
+        "glb_bytes": 1114820,
+        "faces": 8981,
+        "faces_naive": 55710,
+        "height_std": 1.488,
+        "delta_e": 5.017
+      },
+      "w128": {
+        "glb_bytes": 1899368,
+        "faces": 15308,
+        "faces_naive": 99684,
+        "height_std": 1.616,
+        "delta_e": 5.347
+      },
+      "k8_delta_e": 6.47,
+      "k16_delta_e": 4.821,
+      "k32_delta_e": 3.748,
+      "ssim_w64": 0.5868,
+      "ssim_w32": 0.3892,
+      "deterministic": true
+    },
+    {
+      "name": "BSS Genre Router [P2V]",
+      "source": "08-bss-genre-router.gif",
+      "neon_index": 0.1085,
+      "w32": {
+        "glb_bytes": 157040,
+        "faces": 1257,
+        "faces_naive": 8370,
+        "height_std": 0.988,
+        "delta_e": 9.776
+      },
+      "w64": {
+        "glb_bytes": 624032,
+        "faces": 5023,
+        "faces_naive": 33606,
+        "height_std": 1.36,
+        "delta_e": 11.776
+      },
+      "w96": {
+        "glb_bytes": 1364688,
+        "faces": 10996,
+        "faces_naive": 77514,
+        "height_std": 1.563,
+        "delta_e": 12.814
+      },
+      "w128": {
+        "glb_bytes": 2637684,
+        "faces": 19386,
+        "faces_naive": 138996,
+        "height_std": 1.718,
+        "delta_e": 13.235
+      },
+      "k8_delta_e": 14.519,
+      "k16_delta_e": 11.776,
+      "k32_delta_e": 9.678,
+      "ssim_w64": 0.3667,
+      "ssim_w32": 0.1463,
+      "deterministic": true
+    },
+    {
+      "name": "Logo Codex [P2V]",
+      "source": "09-logo-codex.png",
+      "neon_index": 0.1462,
+      "w32": {
+        "glb_bytes": 175504,
+        "faces": 1406,
+        "faces_naive": 12258,
+        "height_std": 2.546,
+        "delta_e": 9.631
+      },
+      "w64": {
+        "glb_bytes": 640388,
+        "faces": 5155,
+        "faces_naive": 50922,
+        "height_std": 2.864,
+        "delta_e": 10.025
+      },
+      "w96": {
+        "glb_bytes": 1375588,
+        "faces": 11084,
+        "faces_naive": 116748,
+        "height_std": 2.961,
+        "delta_e": 10.513
+      },
+      "w128": {
+        "glb_bytes": 2555800,
+        "faces": 18784,
+        "faces_naive": 209238,
+        "height_std": 3.03,
+        "delta_e": 10.065
+      },
+      "k8_delta_e": 12.521,
+      "k16_delta_e": 10.025,
+      "k32_delta_e": 6.885,
+      "ssim_w64": 0.4939,
+      "ssim_w32": 0.2287,
+      "deterministic": true
+    },
+    {
+      "name": "Test Lab",
+      "source": "12-test-lab.jpg",
+      "neon_index": 0.1539,
+      "w32": {
+        "glb_bytes": 211956,
+        "faces": 1700,
+        "faces_naive": 10422,
+        "height_std": 1.472,
+        "delta_e": 4.279
+      },
+      "w64": {
+        "glb_bytes": 734996,
+        "faces": 5918,
+        "faces_naive": 44022,
+        "height_std": 1.74,
+        "delta_e": 5.366
+      },
+      "w96": {
+        "glb_bytes": 1591096,
+        "faces": 12822,
+        "faces_naive": 100620,
+        "height_std": 1.904,
+        "delta_e": 5.954
+      },
+      "w128": {
+        "glb_bytes": 2955908,
+        "faces": 21726,
+        "faces_naive": 179382,
+        "height_std": 2.058,
+        "delta_e": 6.696
+      },
+      "k8_delta_e": 10.978,
+      "k16_delta_e": 5.366,
+      "k32_delta_e": 3.744,
+      "ssim_w64": 0.721,
+      "ssim_w32": 0.5418,
+      "deterministic": true
+    },
+    {
+      "name": "DJJJ Signature Bridge v1",
+      "source": "13-signature-bridge.gif",
+      "neon_index": 0.034,
+      "w32": {
+        "glb_bytes": 202300,
+        "faces": 1622,
+        "faces_naive": 7662,
+        "height_std": 0.6,
+        "delta_e": 4.045
+      },
+      "w64": {
+        "glb_bytes": 772708,
+        "faces": 6222,
+        "faces_naive": 32970,
+        "height_std": 0.814,
+        "delta_e": 4.478
+      },
+      "w96": {
+        "glb_bytes": 1650136,
+        "faces": 13298,
+        "faces_naive": 75918,
+        "height_std": 0.979,
+        "delta_e": 4.376
+      },
+      "w128": {
+        "glb_bytes": 3144012,
+        "faces": 23109,
+        "faces_naive": 136956,
+        "height_std": 1.053,
+        "delta_e": 4.314
+      },
+      "k8_delta_e": 5.601,
+      "k16_delta_e": 4.478,
+      "k32_delta_e": 3.078,
+      "ssim_w64": 0.5364,
+      "ssim_w32": 0.3487,
+      "deterministic": true
+    },
+    {
+      "name": "Neon Drive [P2V]",
+      "source": "11-neon-drive-v2.png",
+      "neon_index": 0.2086,
+      "w32": {
+        "glb_bytes": 131984,
+        "faces": 1055,
+        "faces_naive": 5994,
+        "height_std": 1.144,
+        "delta_e": 7.007
+      },
+      "w64": {
+        "glb_bytes": 497544,
+        "faces": 4003,
+        "faces_naive": 24336,
+        "height_std": 1.314,
+        "delta_e": 7.086
+      },
+      "w96": {
+        "glb_bytes": 1079232,
+        "faces": 8694,
+        "faces_naive": 55710,
+        "height_std": 1.408,
+        "delta_e": 7.322
+      },
+      "w128": {
+        "glb_bytes": 1853244,
+        "faces": 14936,
+        "faces_naive": 99444,
+        "height_std": 1.466,
+        "delta_e": 7.67
+      },
+      "k8_delta_e": 10.795,
+      "k16_delta_e": 7.086,
+      "k32_delta_e": 5.662,
+      "ssim_w64": 0.5239,
+      "ssim_w32": 0.3526,
+      "deterministic": true
+    },
+    {
+      "name": "Mythos Jr. [P2V]",
+      "source": "14-mythos-jr.png",
+      "neon_index": 0.1463,
+      "w32": {
+        "glb_bytes": 155040,
+        "faces": 1241,
+        "faces_naive": 8952,
+        "height_std": 0.916,
+        "delta_e": 10.333
+      },
+      "w64": {
+        "glb_bytes": 612612,
+        "faces": 4931,
+        "faces_naive": 36558,
+        "height_std": 1.254,
+        "delta_e": 12.091
+      },
+      "w96": {
+        "glb_bytes": 1366536,
+        "faces": 11011,
+        "faces_naive": 83550,
+        "height_std": 1.495,
+        "delta_e": 13.067
+      },
+      "w128": {
+        "glb_bytes": 2613732,
+        "faces": 19210,
+        "faces_naive": 149622,
+        "height_std": 1.616,
+        "delta_e": 13.456
+      },
+      "k8_delta_e": 15.248,
+      "k16_delta_e": 12.091,
+      "k32_delta_e": 9.679,
+      "ssim_w64": 0.3685,
+      "ssim_w32": 0.1604,
+      "deterministic": true
+    }
+  ],
+  "holdout": [
+    {
+      "source": "asimov-law1.jpg",
+      "size": "2752x1536",
+      "ssim": 0.6302,
+      "delta_e": 4.488,
+      "glb_bytes": 1133164
+    },
+    {
+      "source": "asimov-law2.jpg",
+      "size": "2752x1536",
+      "ssim": 0.6004,
+      "delta_e": 2.473,
+      "glb_bytes": 1099188
+    },
+    {
+      "source": "asimov-law3.jpg",
+      "size": "2752x1536",
+      "ssim": 0.6008,
+      "delta_e": 1.606,
+      "glb_bytes": 1191196
+    },
+    {
+      "source": "asimov-shield-kernel.jpg",
+      "size": "512x286",
+      "ssim": 0.5338,
+      "delta_e": 1.852,
+      "glb_bytes": 1028896
+    },
+    {
+      "source": "globe-thumb.jpg",
+      "size": "125x126",
+      "ssim": 0.8421,
+      "delta_e": 6.489,
+      "glb_bytes": 1747336
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "claim": "Culling spart bei W=64 je Quelle >= 80 % der Flaechen",
+      "supported": true,
+      "evidence": "min 81.1%, max 90.2%"
+    },
+    {
+      "id": "H2",
+      "claim": "W=64 < 2 MB fuer alle, W=128 > 2 MB fuer mind. eine",
+      "supported": true,
+      "evidence": "W=64 max 0.77 MB, W=128 max 3.14 MB"
+    },
+    {
+      "id": "H3",
+      "claim": "K=16: mittleres Delta-E76 < 10 fuer jede Quelle",
+      "supported": false,
+      "evidence": "max 12.09, min 1.58"
+    },
+    {
+      "id": "H4",
+      "claim": "Pearson r(Neon-Index, Hoehenstreuung) > 0.5",
+      "supported": false,
+      "evidence": "r = 0.379 (n = 11)"
+    },
+    {
+      "id": "H5",
+      "claim": "SSIM Draufsicht W=64 vs. Quelle >= 0.5 fuer jede Quelle",
+      "supported": false,
+      "evidence": "min 0.367, max 0.864"
+    },
+    {
+      "id": "H6",
+      "claim": "Byte-identische GLB bei Wiederholung",
+      "supported": true,
+      "evidence": "11/11 identisch"
+    },
+    {
+      "id": "H7",
+      "claim": "Holdout, W=96 K=32: SSIM >= 0.5 fuer jedes Bild",
+      "supported": true,
+      "evidence": "min 0.534 (n = 5)"
+    },
+    {
+      "id": "H8",
+      "claim": "Holdout, K=32: Delta-E76 < 10 fuer jedes Bild",
+      "supported": true,
+      "evidence": "max 6.49"
+    },
+    {
+      "id": "H9",
+      "claim": "Holdout, W=96 K=32: GLB < 2 MB fuer jedes Bild",
+      "supported": true,
+      "evidence": "max 1.75 MB"
+    }
+  ]
+}
