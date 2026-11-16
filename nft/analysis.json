@@ -440,6 +440,166 @@
     "cyan_magenta": null
   },
   {
+    "file": "11-neon-drive-v2.png",
+    "sha256": "27832a37a17729fb100f4c2f19c935635b6aae2167aa5705772c4a653818f2e0",
+    "bytes": 5391061,
+    "format": "PNG",
+    "width": 2720,
+    "height": 1536,
+    "aspect": "1.771",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#070415",
+        "share": 0.3263
+      },
+      {
+        "hex": "#640382",
+        "share": 0.1582
+      },
+      {
+        "hex": "#25023C",
+        "share": 0.1535
+      },
+      {
+        "hex": "#231B56",
+        "share": 0.1502
+      },
+      {
+        "hex": "#239DD9",
+        "share": 0.1062
+      },
+      {
+        "hex": "#25448B",
+        "share": 0.1056
+      }
+    ],
+    "luminance": 0.1604,
+    "saturation": 0.9144,
+    "neon_index": 0.2086,
+    "cyan_magenta": 1.078
+  },
+  {
+    "file": "12-test-lab.jpg",
+    "sha256": "e5ec4d7b248c3d1556f3a21e8868c029b6efcb18479dea8f49a6d615b6324685",
+    "bytes": 102892,
+    "format": "JPEG",
+    "width": 800,
+    "height": 758,
+    "aspect": "1.055",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#02030B",
+        "share": 0.2725
+      },
+      {
+        "hex": "#000001",
+        "share": 0.2439
+      },
+      {
+        "hex": "#4D318A",
+        "share": 0.1534
+      },
+      {
+        "hex": "#2C0D4B",
+        "share": 0.1226
+      },
+      {
+        "hex": "#52B7D8",
+        "share": 0.1053
+      },
+      {
+        "hex": "#1A062F",
+        "share": 0.1024
+      }
+    ],
+    "luminance": 0.1486,
+    "saturation": 0.6423,
+    "neon_index": 0.1539,
+    "cyan_magenta": 1.056
+  },
+  {
+    "file": "13-signature-bridge.gif",
+    "sha256": "2c06b43daf1cc76ece98fae65a19210177f1a8e64b6b56db6d95249139d6c56c",
+    "bytes": 644730,
+    "format": "GIF",
+    "width": 508,
+    "height": 500,
+    "aspect": "1.016",
+    "frames": 6,
+    "palette": [
+      {
+        "hex": "#030D1B",
+        "share": 0.3008
+      },
+      {
+        "hex": "#01050A",
+        "share": 0.245
+      },
+      {
+        "hex": "#294769",
+        "share": 0.1929
+      },
+      {
+        "hex": "#020810",
+        "share": 0.1787
+      },
+      {
+        "hex": "#000306",
+        "share": 0.059
+      },
+      {
+        "hex": "#000610",
+        "share": 0.0235
+      }
+    ],
+    "luminance": 0.1018,
+    "saturation": 0.8159,
+    "neon_index": 0.034,
+    "cyan_magenta": null
+  },
+  {
+    "file": "14-mythos-jr.png",
+    "sha256": "ecc12095a7d8824e39124558af5f3de8bfaa47d9bb0c535df97c28669e66562c",
+    "bytes": 3008976,
+    "format": "PNG",
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "frames": 1,
+    "palette": [
+      {
+        "hex": "#362733",
+        "share": 0.2198
+      },
+      {
+        "hex": "#23447B",
+        "share": 0.218
+      },
+      {
+        "hex": "#071F4C",
+        "share": 0.2134
+      },
+      {
+        "hex": "#714B3F",
+        "share": 0.1444
+      },
+      {
+        "hex": "#836E5F",
+        "share": 0.1119
+      },
+      {
+        "hex": "#ABAE8E",
+        "share": 0.0925
+      }
+    ],
+    "luminance": 0.2853,
+    "saturation": 0.6406,
+    "neon_index": 0.1463,
+    "cyan_magenta": 458.667
+  },
+  {
     "file": "00-neon-drive.png",
     "sha256": "f4e5fef5edaa6942dabfe90cff2a370414d21fea247e8a2019940e7913ea1e8d",
     "bytes": 5087871,
