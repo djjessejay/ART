@@ -1,0 +1,172 @@
+{
+  "collection": {
+    "name": "Blue Dimension P2V",
+    "symbol": "BDP2V",
+    "description": "Pixel2Voxel: die Werke von DJ Jesse Jay als begehbare Voxel-Reliefs. Licht wird Hoehe, Neon wird Architektur. Jedes Token enthaelt ein 3D-Modell (glTF) und eine Vorschau. Designed by TwoDivision & @R† Artist Agency.",
+    "external_link": "https://djjessejay.ch",
+    "seller_fee_basis_points": 750,
+    "fee_recipient": "0x0000000000000000000000000000000000000000",
+    "creator": "DJ Jesse Jay",
+    "ai_disclosure": "Quellbilder KI-gestuetzt erstellt und kuratiert; Voxelmodelle deterministisch per p2v-Algorithmus erzeugt.",
+    "license": "CC BY-NC 4.0 (Bild und Modell); Marken DJ Jesse Jay, J·Γ-Logo und @R† bleiben vorbehalten",
+    "p2v_defaults": {
+      "width": 96,
+      "colors": 32,
+      "max_height": 12,
+      "gamma": 1.6
+    }
+  },
+  "tokens": [
+    {
+      "id": 1,
+      "status": "mint",
+      "name": "Bern Polka Express [P2V]",
+      "source": "assets/original/01-bern-polka-express.png",
+      "description": "Die Neon-Lok als Voxel-Relief: Equalizer-Waende werden Tuerme, die Schienen ein leuchtender Grat.",
+      "attributes": {
+        "Twin of": "Bern Polka Express",
+        "Series": "Neon Rails"
+      }
+    },
+    {
+      "id": 2,
+      "status": "mint",
+      "name": "Zuerisee Dub [P2V]",
+      "source": "assets/original/02-zuerisee-dub.png",
+      "description": "Die Spektrum-Krone ueber dem See steht jetzt im Raum. Skyline aus Licht, Wasser aus Rauschen.",
+      "attributes": {
+        "Twin of": "Zuerisee Dub",
+        "Series": "Pixel Skylines"
+      }
+    },
+    {
+      "id": 3,
+      "status": "mint",
+      "name": "Pixel Signature [P2V]",
+      "source": "assets/original/03-pixel-signature.png",
+      "description": "Voxel zurueck zu Voxel: die Signatur, ein zweites Mal gebaut.",
+      "attributes": {
+        "Twin of": "Pixel Signature",
+        "Series": "Identity"
+      }
+    },
+    {
+      "id": 4,
+      "status": "mint",
+      "name": "@R† Seal [P2V]",
+      "source": "assets/original/04-art-agency-seal.png",
+      "crop": [
+        0,
+        190,
+        800,
+        1090
+      ],
+      "description": "Die Praegung als Hoehenkarte. Fast flach, nur das Zeichen hebt sich.",
+      "attributes": {
+        "Twin of": "@R† Seal",
+        "Series": "Identity"
+      }
+    },
+    {
+      "id": 5,
+      "status": "mint",
+      "name": "Vinyl Roots [P2V]",
+      "source": "assets/original/05-vinyl-roots.png",
+      "description": "Goldene Zeitlinie als Kamm, die Limmat als dunkle Ebene.",
+      "attributes": {
+        "Twin of": "Vinyl Roots",
+        "Series": "Chronicle"
+      }
+    },
+    {
+      "id": 6,
+      "status": "mint",
+      "name": "BSS Genre Router [P2V]",
+      "source": "assets/original/08-bss-genre-router.gif",
+      "description": "Das Pixel-Studio, Frame 1, in die dritte Dimension gefaltet.",
+      "attributes": {
+        "Twin of": "BSS Genre Router",
+        "Series": "Machine Listening"
+      }
+    },
+    {
+      "id": 7,
+      "status": "mint",
+      "name": "Logo Codex [P2V]",
+      "source": "assets/original/09-logo-codex.png",
+      "description": "Vier Zeichen, vier Plateaus.",
+      "attributes": {
+        "Twin of": "Logo Codex",
+        "Series": "Identity"
+      }
+    },
+    {
+      "id": 8,
+      "status": "mint",
+      "name": "Test Lab",
+      "source": "assets/original/12-test-lab.jpg",
+      "description": "Hypothese, Kolben, Beweis. Das Labor-Neon als Voxel-Schild, Signet der P2V-Methode.",
+      "attributes": {
+        "Series": "Lab",
+        "Origin": "P2V Original"
+      }
+    },
+    {
+      "id": 9,
+      "status": "mint",
+      "name": "DJJJ Signature Bridge v1",
+      "source": "assets/original/13-signature-bridge.gif",
+      "description": "Audio, Events, Zeit, Visuals, Welt: sieben Ebenen ueber der Blue-Dimension-Skyline, als Schichtmodell gebaut.",
+      "attributes": {
+        "Series": "Machine Listening",
+        "Origin": "P2V Original"
+      }
+    },
+    {
+      "id": 10,
+      "status": "hold",
+      "name": "Neon Drive [P2V]",
+      "source": "assets/original/11-neon-drive-v2.png",
+      "description": "Das markenlose Coupe zwischen Lautsprecherwaenden, Lichtleiste als Grat.",
+      "attributes": {
+        "Twin of": "Neon Drive",
+        "Series": "Neon Rails"
+      },
+      "clearance": [
+        {
+          "item": "Front ohne Emblem, Kuehlergrill oder Herstellerform (Neufassung v2 geprueft)",
+          "state": "done"
+        },
+        {
+          "item": "Canva-Nutzungsbedingungen fuer NFT-Nutzung KI-generierter Inhalte pruefen",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "status": "hold",
+      "name": "Mythos Jr. [P2V]",
+      "source": "assets/original/14-mythos-jr.png",
+      "description": "Roboter, Einhorn, zwei Plattenteller: das Pixel2Voxel-Maskottchen im Community-Studio.",
+      "attributes": {
+        "Series": "Pixel Skylines",
+        "Origin": "P2V Original"
+      },
+      "clearance": [
+        {
+          "item": "Radio-LoRa-Logo, Schriftzug und Sticker: schriftliche Freigabe des Senders",
+          "state": "open"
+        },
+        {
+          "item": "Herstellerlogo und Modellbezeichnung auf dem Drumcomputer entfernen",
+          "state": "open"
+        },
+        {
+          "item": "Retro-Game-Figur auf Laptop und Case entfernen oder durch eigenes Motiv ersetzen",
+          "state": "open"
+        }
+      ]
+    }
+  ]
+}
